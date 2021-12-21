@@ -1,5 +1,6 @@
 # Next.js + Tailwind CSS + Shopify Starter
 
+<!--
 <div align="center">
 <img src="https://github.com/btahir/next-shopify-starter/blob/main/public/images/demo-store.gif">
 <p align="center">
@@ -61,7 +62,7 @@ purchase the items. You can see this play out in the example store. Yes - the st
 
 ## How to use
 
-By default, the store is set to query and show all products in one collection. 
+By default, the store is set to query and show all products in one collection.
 You can extend this to query multiple collections or your whole store.
 
 #### A note on pagination in the GraphQL queries
@@ -100,7 +101,7 @@ yarn && yarn dev
 
 ### Update Site Metadata
 
-You can update your site metadata in the next.config.js file. 
+You can update your site metadata in the next.config.js file.
 
 ```
 env: {
@@ -110,7 +111,7 @@ env: {
   siteUrl: 'https://doggystickers.xyz',
   siteImagePreviewUrl: '/images/main.jpg',
   twitterHandle: '@your_handle'
-} 
+}
 ```
 
 ### Update Colors
@@ -140,7 +141,7 @@ You can deploy this using any number of services. Vercel and Netlify are the one
 ### Credit
 
 The store was inspired by the awesome [Gatsby Swag Store](https://github.com/gatsbyjs/store.gatsbyjs.org "gatsby store") as well
-as countless other devs much more capable than me who put out their awesome work for free. 
+as countless other devs much more capable than me who put out their awesome work for free.
 
 ### License
 
@@ -151,4 +152,4 @@ as the Gatsby Swag Store did for me when I first started out.
 
 If you did find this useful and want to show your appreciation you can buy me a [coffee](https://www.buymeacoffee.com/neum "coffee") :smiley:
 
-You can also buy some Doggy Stickers from the [store](https://doggystickers.xyz/ "store")! :dog:
+You can also buy some Doggy Stickers from the [store](https://doggystickers.xyz/ "store")! :dog: -->
