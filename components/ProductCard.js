@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Price from "@/components/Price";
+import { formatter } from "@/utils/helpers";
 
 function ProductCard({ product }) {
   const { handle, title, description, priceRange, images, tags } = product.node;

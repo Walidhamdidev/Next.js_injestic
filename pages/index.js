@@ -12,11 +12,11 @@ function IndexPage({ products }) {
 }
 
 export async function getStaticProps() {
-  const { data } = await productsQuery();
+  const products = await productsQuery();
 
   return {
     props: {
-      products: data.products,
+      products,
     },
   };
 }

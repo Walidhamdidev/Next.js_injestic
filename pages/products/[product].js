@@ -1,46 +1,40 @@
-import { callShopify } from "@/lib/shopify";
+import ProductPageContent from "@/components/ProductPageContent";
+import { callShopify, getAllProducts, getProduct } from "@/lib/shopify";
 // import ProductSection from "@/components/ProductSection";
-import { useRouter } from "next/router";
 
-function ProductPage({ product: singleProduct }) {
-  const router = useRouter();
-
+function ProductPage({ product }) {
   return (
     <div className="min-h-screen py-12 sm:pt-20">
-      {router.query.handle}
-
-      {/* <ProductSection productData={productData} /> */}
+      <ProductPageContent product={product} />
     </div>
   );
 }
 
-const gql = String.raw;
+export async function getStaticPaths() {
+  const allProducts = await getAllProducts();
 
-const querySingleProduct = gql`{
-  query SingleProduct($handle:String!){
-   
-      productByHandle(handle: $handle) {
-        title
-        description
-        updatedAt
-        tags
-        priceRange {
-          minVariantPrice {
-            amount
-          }
-        }
-        images(first: 1) {
-          edges {
-            
-            node {
-            
-              altText
-              transformedSrc
-            }
-          }
-        }
-      }
-  
-}`;
+  const paths = allProducts.map((item) => {
+    const product = String(item.node.handle);
+
+    return {
+      params: { product },
+    };
+  });
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params }) {
+  const product = await getProduct(params.product);
+
+  return {
+    props: {
+      product,
+    },
+  };
+}
 
 export default ProductPage;
