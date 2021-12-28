@@ -1,6 +1,4 @@
 {
-  "name": "with-tailwindcss",
-  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,23 +6,17 @@
     "start": "next start"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.16",
-    "@headlessui/react": "^1.4.2",
-    "@heroicons/react": "^1.0.5",
-    "@tailwindcss/aspect-ratio": "^0.4.0",
-    "@tailwindcss/forms": "^0.3.2",
-    "autoprefixer": "^10.0.4",
-    "headlessui": "^0.0.0",
-    "heroicons": "^1.0.5",
-    "next": "latest",
-    "next-pwa": "^5.0.5",
-    "postcss": "^8.1.10",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "tailwindcss": "^2.0.2",
-    "webpack": "^5.24.2"
+    "@headlessui/react": "^1.4.0",
+    "@heroicons/react": "^1.0.4",
+    "next": "^11.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.38.2",
+    "swiper": "^6.7.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
   }
 }

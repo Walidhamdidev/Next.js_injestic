@@ -1,20 +1,10 @@
-const withPWA = require("next-pwa");
-
-module.exports = withPWA({
-  future: { webpack5: true },
-  pwa: {
-    dest: "public",
-    disable: process.env.NODE_ENV === "development",
-  },
+module.exports = {
   env: {
-    siteTitle: "Sell Store",
-    siteDescription: "Get some Clothes",
-    siteKeywords: "Stickers, Clothes, fun",
-    siteUrl: "https://www.website.xyz",
-    siteImagePreviewUrl: "/images/main.jpg",
-    twitterHandle: "@waleedo",
+    SHOPIFY_STORE_DOMAIN: process.env.NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN,
+    SHOPIFY_STOREFRONT_ACCESSTOKEN:
+      process.env.NEXT_PUBLIC_SHOPIFY_STORE_FRONT_ACCESS_TOKEN,
   },
   images: {
     domains: ["cdn.shopify.com"],
   },
-});
+};

@@ -1,40 +1,37 @@
-import ProductPageContent from "@/components/ProductPageContent";
-import { callShopify, getAllProducts, getProduct } from "@/lib/shopify";
-// import ProductSection from "@/components/ProductSection";
+import ProductPageContent from "../../components/ProductPageContent"
+import { getAllProducts, getProduct, recursiveCatalog } from "../../lib/shopify"
 
-function ProductPage({ product }) {
+export default function ProductPage ({ product }) {
   return (
     <div className="min-h-screen py-12 sm:pt-20">
       <ProductPageContent product={product} />
     </div>
-  );
+  )
 }
 
 export async function getStaticPaths() {
-  const allProducts = await getAllProducts();
+  const products = await recursiveCatalog()
 
-  const paths = allProducts.map((item) => {
-    const product = String(item.node.handle);
+  const paths = products.map(item => {
+    const product = String(item.node.handle)
 
     return {
-      params: { product },
-    };
-  });
+      params: { product }
+    }
+  })
 
   return {
     paths,
-    fallback: false,
-  };
+    fallback: false
+  }
 }
 
 export async function getStaticProps({ params }) {
-  const product = await getProduct(params.product);
+  const product = await getProduct(params.product)
 
   return {
     props: {
-      product,
-    },
-  };
+      product
+    }
+  }
 }
-
-export default ProductPage;
