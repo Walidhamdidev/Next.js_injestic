@@ -35,7 +35,7 @@ export default function Nav() {
             <Link href="#">
               <a
                 href="#"
-                className="text-[#1e1a1a] pb-1 border-transparent hover:text-gray-800  hover:border-b-[1px] hover:border-[#1e1a1a] "
+                className="text-[#1e1a1a]  pb-1  border-b-[1px] border-transparent hover:text-gray-800  hover:border-[#1e1a1a] transition-all ease-in "
               >
                 Home
               </a>
@@ -45,7 +45,7 @@ export default function Nav() {
             <Link href="#">
               <a
                 href="#"
-                className="text-[#1e1a1a] pb-1 border-transparent hover:text-gray-800  hover:border-b-[1px] hover:border-[#1e1a1a]"
+                className="text-[#1e1a1a] pb-1 border-b-[1px] border-transparent hover:text-gray-800  hover:border-[#1e1a1a] transition-all ease-in"
               >
                 Store
               </a>
@@ -55,7 +55,7 @@ export default function Nav() {
             <Link href="#">
               <a
                 href="#"
-                className="text-[#1e1a1a] pb-1 border-transparent hover:text-gray-800  hover:border-b-[1px] hover:border-[#1e1a1a]"
+                className="text-[#1e1a1a] pb-1 border-b-[1px] border-transparent hover:text-gray-800  hover:border-[#1e1a1a] transition-all ease-in"
               >
                 About
               </a>
@@ -65,7 +65,7 @@ export default function Nav() {
             <Link href="#">
               <a
                 href="#"
-                className="text-[#1e1a1a] pb-1 border-transparent hover:text-gray-800  hover:border-b-[1px] hover:border-[#1e1a1a]"
+                className="text-[#1e1a1a] pb-1 border-b-[1px] border-transparent hover:text-gray-800  hover:border-[#1e1a1a] transition-all ease-in"
               >
                 Account
               </a>

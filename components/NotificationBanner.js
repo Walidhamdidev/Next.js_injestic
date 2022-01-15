@@ -2,7 +2,7 @@ import React from "react";
 
 function NotificationBanner() {
   return (
-    <div className="sticky top-0 bg-black text-white">
+    <div className="sticky top-0 bg-black text-white z-50">
       <div
         className=" flex items-center 
       justify-between 
