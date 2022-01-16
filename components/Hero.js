@@ -35,7 +35,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="">
-          <div className="w-[45vw] h-[45vh] border relative rounded-md overflow-hidden">
+          <div className="w-[44vw] h-[44vh] border relative rounded-md overflow-hidden">
             <Image src="/images/hero_img.jpg" layout="fill" />
           </div>
         </div>
