@@ -31,41 +31,41 @@ export default function Nav() {
           </a>
         </Link>
         <ul className="flex font-sans text-xl">
-          <li className="mr-10">
+          <li className="mr-16">
             <Link href="#">
               <a
                 href="#"
-                className="text-[#1e1a1a]  pb-1  border-b-[1px] border-transparent hover:text-gray-800  hover:border-[#1e1a1a] transition-all ease-in "
+                className="text-[#1e1a1a]  pb-1   duration-700  border-b-[1px] border-transparent hover:text-gray-800  hover:border-[#1e1a1a] transition-all ease-in "
               >
                 Home
               </a>
             </Link>
           </li>
-          <li className="mr-10">
+          <li className="mr-16">
             <Link href="#">
               <a
                 href="#"
-                className="text-[#1e1a1a] pb-1 border-b-[1px] border-transparent hover:text-gray-800  hover:border-[#1e1a1a] transition-all ease-in"
+                className="text-[#1e1a1a] pb-1  duration-700  border-b-[1px] border-transparent hover:text-gray-800  hover:border-[#1e1a1a] transition-all ease-in"
               >
                 Store
               </a>
             </Link>
           </li>
-          <li className="mr-10">
+          <li className="mr-16">
             <Link href="#">
               <a
                 href="#"
-                className="text-[#1e1a1a] pb-1 border-b-[1px] border-transparent hover:text-gray-800  hover:border-[#1e1a1a] transition-all ease-in"
+                className="text-[#1e1a1a] pb-1  duration-700  border-b-[1px] border-transparent hover:text-gray-800  hover:border-[#1e1a1a] transition-all ease-in"
               >
                 About
               </a>
             </Link>
           </li>
-          <li className="mr-10">
+          <li className="mr-16">
             <Link href="#">
               <a
                 href="#"
-                className="text-[#1e1a1a] pb-1 border-b-[1px] border-transparent hover:text-gray-800  hover:border-[#1e1a1a] transition-all ease-in"
+                className="text-[#1e1a1a] pb-1  duration-700  border-b-[1px] border-transparent hover:text-gray-800  hover:border-[#1e1a1a] transition-all ease-in"
               >
                 Account
               </a>
@@ -73,7 +73,7 @@ export default function Nav() {
           </li>
           <Link href={""}>
             <a
-              className="text-md  cursor-pointer relative w-8 h-8"
+              className="text-md  cursor-pointer relative w-7 h-7"
               onClick={() => setCartOpen(!cartOpen)}
               href={""}
             >
