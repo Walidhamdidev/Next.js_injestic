@@ -1,4 +1,4 @@
-# Welcome to the Shopify + Next.js + Tailwind CSS course
+<!-- # Welcome to the Shopify + Next.js + Tailwind CSS course
 
 <div align="center">
   <img src="https://cdn.shopify.com/s/files/1/0524/4390/6207/files/site-preview.gif?v=1630892895" alt="shopify next.js course preview">
@@ -43,11 +43,11 @@ This is a production ready Headless Shopify storefront using Next.js, Shopify St
 ## Future Updates:
 This is an ongoing project that is currently released in beta. Future updates will include:
 * Using SWR for automatically updating content on SSG (Static Site Generation) websites.
-* Webhooks triggering for product updates, etc. 
+* Webhooks triggering for product updates, etc.
 * Additional ecommerce ready sections for Next.js using Tailwind CSS (currently 5 are included with the course assets)
 * Addition of lectures covering Shopify’s Hydrogen (when released)
-* And much more! 
+* And much more!
 
 
 ### Credits
-Big thank you to the **Shopify, Vercel, and Tailwind Labs** teams for making it so easy and pleasurable to create incredible storefronts with speed. 
+Big thank you to the **Shopify, Vercel, and Tailwind Labs** teams for making it so easy and pleasurable to create incredible storefronts with speed.  -->
