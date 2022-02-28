@@ -1,25 +1,47 @@
-const navigation = [
-  { name: "About", href: "#" },
-  { name: "Terms and Conditions", href: "#" },
-];
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
-        <nav className="flex flex-wrap justify-center">
-          {navigation.map((item, i) => (
-            <div key={i} className="px-6 py-2">
-              <a href={item.href} className="text-gray-500 hover:text-gray-900">
-                {item.name}
+    <footer className="p-4    md:px-6 md:py-8 bg-gray-800">
+      <div className="sm:flex sm:items-center sm:justify-between ">
+        <Link href="/">
+          <a className="flex relative">
+            <Image width={180} height={60} src="/images/injestic_logo.png" />
+          </a>
+        </Link>
+        <span className="block text-lg  sm:text-center text-gray-400 ">
+          © 2022
+          <Link href="https://waleedo.com">
+            <a target="_blank" className="hover:underline ml-3">
+              Waleedo
+            </a>
+          </Link>
+          . All Rights Reserved.
+        </span>
+        <ul className="flex flex-wrap items-center mb-6 sm:mb-0">
+          <li>
+            <Link href="/privacyPolicy">
+              <a className="mr-4 text-lg hover:underline md:mr-6 text-gray-400">
+                Privacy Policy
               </a>
-            </div>
-          ))}
-        </nav>
-        <p className="mt-8 text-center text-gray-400">
-          &copy; 2021 Waleedo, All right reserved.
-        </p>
+            </Link>
+          </li>
+          <li>
+            <Link href="/terms">
+              <a className="mr-4 text-lg hover:underline md:mr-6 text-gray-400">
+                Terms
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact">
+              <a className="text-lg hover:underline text-gray-400">Contact</a>
+            </Link>
+          </li>
+        </ul>
       </div>
+      {/* <hr className="my-6  sm:mx-auto border-gray-700 lg:my-8" /> */}
     </footer>
   );
 }

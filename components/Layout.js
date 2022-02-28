@@ -1,17 +1,14 @@
 import React from "react";
 import Footer from "./Footer";
-import Nav from "./Nav";
-import NotificationBanner from "./NotificationBanner";
+import { Navbar } from "./Navbar";
 
 export default function Layout({ children }) {
   return (
-    <div className="flex bg-[#f0f0f0] flex-col justify-between min-h-screen">
-      <Nav />
+    <div>
+      {/* <Nav /> */}
+      <Navbar />
 
-      <main>
-        <NotificationBanner />
-        {children}
-      </main>
+      <main>{children}</main>
       <Footer />
     </div>
   );
