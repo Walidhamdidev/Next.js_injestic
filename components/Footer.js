@@ -21,6 +21,16 @@ export default function Footer() {
         </span>
         <ul className="flex flex-wrap items-center mb-6 sm:mb-0">
           <li>
+            <Link href="/contact">
+              <a className="text-lg hover:underline text-gray-400">Contact</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/about">
+              <a className="text-lg hover:underline text-gray-400">About Us</a>
+            </Link>
+          </li>
+          <li>
             <Link href="/privacyPolicy">
               <a className="mr-4 text-lg hover:underline md:mr-6 text-gray-400">
                 Privacy Policy
@@ -32,11 +42,6 @@ export default function Footer() {
               <a className="mr-4 text-lg hover:underline md:mr-6 text-gray-400">
                 Terms
               </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact">
-              <a className="text-lg hover:underline text-gray-400">Contact</a>
             </Link>
           </li>
         </ul>
