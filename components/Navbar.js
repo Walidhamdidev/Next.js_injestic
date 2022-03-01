@@ -70,20 +70,20 @@ export const Navbar = () => {
           </div>
           {/* add 3 icons "accoutn" "like" "cart" */}
           <div className="flex items-center justify-between space-x-5 ml-5 md:order-3">
-            <div>
+            {/* <div>
               <Link href="/account">
                 <a className="cursor-pointer">
                   <Image width={25} height={25} src="/images/account.svg" />
                 </a>
               </Link>
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <Link href="/favorite">
                 <a className="cursor-pointer">
                   <Image width={25} height={25} src="/images/favorite.svg" />
                 </a>
               </Link>
-            </div>
+            </div> */}
             <div>
               <Link href="/shoppingCart">
                 <a className="cursor-pointer">
@@ -116,9 +116,9 @@ export const Navbar = () => {
               <button
                 id="dropdownNavbarLink"
                 data-dropdown-toggle="dropdownNavbar"
-                className="flex justify-between text-lg items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                className="flex justify-between text-lg items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
               >
-                Shop
+                Collections
                 <svg
                   className="ml-1 w-4 h-4"
                   fill="currentColor"
