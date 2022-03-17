@@ -8,7 +8,6 @@ export default function Home({ products }) {
     <>
       <HeadInfo title="Products @Jewelry" />
       <Hero />
-      {console.log("Products", { products })}
       <ProductList products={products} />
     </>
   );

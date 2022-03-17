@@ -2,7 +2,9 @@ import Link from "next/link";
 
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
+import { CartContext } from "../context/shopContext";
+import MiniCart from "./MiniCart";
 
 const navbarItems = [
   {
@@ -31,6 +33,12 @@ function Navbar() {
   const [showNav, setShowNav] = useState(true);
   const dropdown = useRef(null);
   const router = useRouter();
+  const { cart, cartOpen, setCartOpen } = useContext(CartContext);
+
+  let cartQuantity = 0;
+  cart.map((item) => {
+    return (cartQuantity += item?.variantQuantity);
+  });
 
   useEffect(() => {
     // only add the event listener when the dropdown is opened
@@ -107,8 +115,11 @@ function Navbar() {
             ref={dropdown}
             className="flex justify-center items-center md:block"
           >
-            <Link href="#">
-              <a className="relative text-gray-700 hover:text-gray-600">
+            <Link href="/" passHref>
+              <a
+                onClick={() => setCartOpen(!cartOpen)}
+                className="relative text-gray-700 hover:text-gray-600"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="24px"
@@ -120,7 +131,11 @@ function Navbar() {
                   <path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
                 </svg>
 
-                <span className="absolute top-0 left-0 rounded-full bg-indigo-500 text-white p-1 text-xs"></span>
+                <span className="absolute -bottom-2 left-4 rounded-full w-full h-full flex justify-center items-center bg-indigo-500 text-white p-3">
+                  {cartQuantity}
+                </span>
+                {/* mini cart */}
+                <MiniCart cart={cart} />
               </a>
             </Link>
           </div>

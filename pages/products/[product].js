@@ -1,12 +1,5 @@
 import ProductPageContent from "../../components/ProductPageContent";
 import { getProduct, recursiveCatalog } from "../../lib/shopify";
-export default function ProductPage({ product }) {
-  return (
-    <div className="min-h-screen py-12 sm:pt-20">
-      <ProductPageContent product={product} />
-    </div>
-  );
-}
 
 export async function getStaticPaths() {
   const products = await recursiveCatalog();
@@ -33,4 +26,12 @@ export async function getStaticProps({ params }) {
       product,
     },
   };
+}
+
+export default function ProductPage({ product }) {
+  return (
+    <div className="min-h-screen py-12 sm:pt-20">
+      <ProductPageContent product={product} />
+    </div>
+  );
 }
