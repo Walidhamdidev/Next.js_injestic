@@ -4,7 +4,7 @@ import HeadInfo from "../components/Head";
 export default function Shop() {
   return (
     <>
-      <HeadInfo title="Shop | ..." />
+      <HeadInfo title="Shop | Injestic" />
       <Categories />
     </>
   );

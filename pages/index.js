@@ -6,7 +6,7 @@ import { getProductsInCollection } from "../lib/shopify";
 export default function Home({ products }) {
   return (
     <>
-      <HeadInfo title="Products @Jewelry" />
+      <HeadInfo title="Injestic Products" />
       <Hero />
       <ProductList products={products} />
     </>

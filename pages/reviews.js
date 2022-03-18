@@ -3,7 +3,7 @@ import HeadInfo from "../components/Head";
 function Reviews() {
   return (
     <>
-      <HeadInfo title="Customer Reviews | ..." />
+      <HeadInfo title="Customer Reviews | Injestic" />
 
       <div className=" px-4 md:px-6 2xl:px-0 2xl:container 2xl:mx-auto flex justify-center items-center">
         <div className="flex flex-col justify-start items-start w-full space-y-8">

@@ -3,7 +3,7 @@ import HeadInfo from "../components/Head";
 function OrderTracking() {
   return (
     <>
-      <HeadInfo title="Order Tracking | ..." />
+      <HeadInfo title="Order Tracking | Injestic" />
 
       <div className="bg-white p-8 rounded-md w-full">
         <div className=" flex items-center justify-between pb-6">
