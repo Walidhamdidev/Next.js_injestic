@@ -30,7 +30,7 @@ const navbarItems = [
 ];
 
 function Navbar() {
-  const [showNav, setShowNav] = useState(true);
+  const [showNav, setShowNav] = useState(false);
   const dropdown = useRef(null);
   const router = useRouter();
   const { cart, cartOpen, setCartOpen } = useContext(CartContext);
@@ -59,7 +59,12 @@ function Navbar() {
       <div className="container mx-auto md:px-6 px-3   flex justify-between md:items-center">
         <Link href="/">
           <a className="block   text-xl font-bold md:text-2xl  " href="#">
-            <Image src="/images/injestic_logo.png" width={180} height={60} />
+            <Image
+              src="/images/injestic_logo.png"
+              alt="Logo injestic of Navbar"
+              width={180}
+              height={60}
+            />
           </a>
         </Link>
 

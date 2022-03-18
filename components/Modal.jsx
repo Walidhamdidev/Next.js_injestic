@@ -15,7 +15,7 @@ function Modal({ show, onClose, children, title }) {
 
   const modalContent = show ? (
     <div className="overflow-y-auto overflow-x-hidden  fixed right-0 left-0 top-4 m-auto z-50 justify-center items-center   ">
-      <div className="relative px-4 w-screen h-screen ">
+      <div className="relative w-screen h-screen ">
         {/* <!-- Modal content --> */}
         <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
           {/* <!-- Modal header --> */}

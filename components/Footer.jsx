@@ -15,13 +15,13 @@ export default function Footer() {
         show={showModal}
         title={title}
       >
-        {content}
+        <div dangerouslySetInnerHTML={{ __html: content }}></div>
       </Modal>
     );
   };
 
   return (
-    <footer className="    md:px-6  bg-white text-center p-2">
+    <footer className="md:px-6  bg-white text-center p-2">
       <div className="flex flex-col items-center justify-between lg:justify-around md:flex-row">
         <div>
           <Link href="/">
@@ -29,11 +29,16 @@ export default function Footer() {
               className="text-gray-800 text-xl font-bold md:text-2xl hover:text-gray-700"
               href="#"
             >
-              <Image src="/images/injestic_logo.png" width={180} height={60} />
+              <Image
+                src="/images/injestic_logo.png"
+                alt="Logo injestic of footer"
+                width={180}
+                height={60}
+              />
             </a>
           </Link>
         </div>
-        <div className="flex flex-col  md:flex-row space-y-5 md:space-y-0 p-4">
+        <nav className="flex flex-col  md:flex-row space-y-5 md:space-y-0 p-4">
           <>
             {footerNavItems.map((footerItem) => (
               <a
@@ -50,7 +55,7 @@ export default function Footer() {
             ))}
             {loadModal(modalContent)}
           </>
-        </div>
+        </nav>
       </div>
 
       <hr className="  sm:mx-auto border-[#c5bdbd]" />
