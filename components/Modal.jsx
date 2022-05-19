@@ -53,9 +53,9 @@ function Modal({ show, onClose, children, title }) {
             <button
               onClick={handleCloseClick}
               type="button"
-              className="text-white mb-5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="text-white mb-5 bg-black hover:bg-yellow-600 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
-              Okay
+              Dismiss
             </button>
           </div>
         </div>

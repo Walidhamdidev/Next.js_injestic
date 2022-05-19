@@ -27,9 +27,7 @@ function Hero() {
                 </h1>
                 <p className="text-sm">
                   Lorem ipsum dolor sit, amet consectetur adipisicing, elit.
-                  Eos, voluptatum dolorum! Laborum blanditiis consequatur,
-                  voluptates, sint enim fugiat saepe, dolor fugit, magnam
-                  explicabo eaque quas id quo porro dolorum facilis...{" "}
+                  Eos, voluptatum dolorum! Laborum blanditiis...
                   <a
                     href="/"
                     className="opacity-50 text-gray-900 hover:opacity-100 inline-block text-xs leading-none border-b border-gray-900"

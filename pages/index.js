@@ -16,6 +16,7 @@ export async function getStaticProps() {
   const products = await getProductsInCollection();
 
   return {
-    props: { products }, // will be passed to the page component as props
+    props: { products },
+    revalidate: 1,
   };
 }
