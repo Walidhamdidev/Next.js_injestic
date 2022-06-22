@@ -62,12 +62,12 @@ export default function Footer() {
 
       <div className="flex items-center p-4">
         <span className="block text-md m-auto  sm:text-center text-gray-600 ">
-          © {new Date().getFullYear().toString()}
-          <Link href="https://walidhamdi.com">
+          © {new Date().getFullYear().toString() + " "}Injestic
+          {/* <Link href="https://walidhamdi.com">
             <a target="_blank" className="hover:underline ml-3">
               Walid Hamdi
             </a>
-          </Link>
+          </Link> */}
           . All Rights Reserved.
         </span>
       </div>

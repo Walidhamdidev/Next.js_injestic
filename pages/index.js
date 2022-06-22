@@ -4,15 +4,11 @@ import ProductList from "../components/ProductList";
 import { getProductsInCollection } from "../lib/shopify";
 
 export default function Home({ products }) {
-  const name: number = 12;
-
   return (
     <>
       <HeadInfo title="Injestic Products" />
       <Hero />
       <ProductList products={products} />
-
-      {console.log("name", name)}
     </>
   );
 }
