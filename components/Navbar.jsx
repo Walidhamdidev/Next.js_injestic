@@ -58,12 +58,12 @@ function Navbar() {
     <nav className="bg-white shadow h-20 md:mt-3">
       <div className="container mx-auto md:px-6 px-3   flex justify-between md:items-center">
         <Link href="/">
-          <a className="block   text-xl font-bold md:text-2xl  " href="#">
+          <a className="block  text-xl font-bold md:text-2xl  " href="#">
             <Image
               src="/images/injestic_logo.png"
               alt="Logo injestic of Navbar"
               width={180}
-              height={60}
+              height={80}
             />
           </a>
         </Link>
@@ -136,7 +136,7 @@ function Navbar() {
                   <path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
                 </svg>
 
-                <span className="absolute -bottom-2 left-4 rounded-full w-full h-full flex justify-center items-center bg-indigo-500 text-white p-3">
+                <span className="absolute -bottom-2 left-4 rounded-full w-full h-full flex justify-center items-center bg-indigo-500 text-white">
                   {cartQuantity}
                 </span>
                 {/* mini cart */}
@@ -146,14 +146,14 @@ function Navbar() {
           </div>
 
           {/* <!-- Mobile menu button --> */}
-          <div className="flex lg:hidden">
+          <div className="flex px-3 lg:hidden">
             <button
               onClick={() => setShowNav(!showNav)}
               type="button"
               className="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600"
               aria-label="toggle menu"
             >
-              <svg viewBox="0 0 24 24" className="h-6 w-6 fill-current">
+              <svg viewBox="0 0 24 24" className="h-9 w-9 fill-current">
                 <path
                   fillRule="evenodd"
                   d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
