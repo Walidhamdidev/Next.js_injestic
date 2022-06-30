@@ -33,7 +33,7 @@ export default function Footer() {
                 src="/images/injestic_logo.png"
                 alt="Logo injestic of footer"
                 width={180}
-                height={60}
+                height={90}
               />
             </a>
           </Link>
@@ -58,7 +58,7 @@ export default function Footer() {
         </nav>
       </div>
 
-      <hr className="  sm:mx-auto border-[#c5bdbd]" />
+      <hr className="  sm:mx-auto " />
 
       <div className="flex items-center p-4">
         <span className="block text-md m-auto  sm:text-center text-gray-600 ">
@@ -68,7 +68,6 @@ export default function Footer() {
               Walid Hamdi
             </a>
           </Link> */}
-          . All Rights Reserved.
         </span>
       </div>
     </footer>

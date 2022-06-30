@@ -8,14 +8,6 @@ import MiniCart from "./MiniCart";
 
 const navbarItems = [
   {
-    item: "Home",
-    path: "/",
-  },
-  {
-    item: "Shop",
-    path: "/shop",
-  },
-  {
     item: "Reviews",
     path: "/reviews",
   },
@@ -31,6 +23,7 @@ const navbarItems = [
 
 function Navbar() {
   const [showNav, setShowNav] = useState(false);
+  const [showDropdownShopItems, setShowDropdownShopItems] = useState(false);
   const dropdown = useRef(null);
   const router = useRouter();
   const { cart, cartOpen, setCartOpen } = useContext(CartContext);
@@ -55,8 +48,8 @@ function Navbar() {
   }, [showNav]);
 
   return (
-    <nav className="bg-white shadow h-20 md:mt-3">
-      <div className="container mx-auto md:px-6 px-3   flex justify-between md:items-center">
+    <nav className="bg-white  h-20 ">
+      <div className="container mx-auto md:px-6 px-3   flex justify-around md:items-center">
         <Link href="/">
           <a className="block  text-xl font-bold md:text-2xl  " href="#">
             <Image
@@ -97,6 +90,89 @@ function Navbar() {
               bg-white`
             }`}
           >
+            <li>
+              <Link href={`/`}>
+                <a
+                  className={
+                    router.pathname === `/`
+                      ? " border-blue-500 text-gray-800 text-lg border-b-2 mx-1.5 sm:mx-6 transition ease-in duration-300"
+                      : " text-gray-800 text-lg  mx-1.5 sm:mx-6"
+                  }
+                >
+                  Home
+                </a>
+              </Link>
+            </li>
+            <li>
+              <div class="relative inline-block ">
+                <div>
+                  <Link href={`/shop`}>
+                    <a
+                      // onMouseEnter={() => setShowDropdownShopItems(true)}
+                      // onMouseLeave={() => setShowDropdownShopItems(false)}
+                      className={
+                        router.pathname === `/shop`
+                          ? " border-blue-500 text-gray-800 text-lg border-b-2 mx-1.5 sm:mx-6 transition ease-in duration-300"
+                          : " text-gray-800 text-lg  mx-1.5 sm:mx-6"
+                      }
+                    >
+                      Shop
+                    </a>
+                  </Link>
+                </div>
+
+                <div
+                  className={` 
+                  ${!showDropdownShopItems && "hidden"}
+                  z-50 
+                  origin-top-right 
+                  absolute left-0 mt-4 w-56 rounded-md 
+                  shadow-lg bg-white ring-1 
+                  ring-black ring-opacity-5 
+                  focus:outline-none`}
+                  role="menu"
+                  ariaOrientation="vertical"
+                  ariaLabelledby="menu-button"
+                  tabindex="-1"
+                >
+                  <div className="py-1" role="none">
+                    <Link href="/">
+                      <a
+                        href="#"
+                        className="text-gray-700 block px-4 py-2 text-sm"
+                        role="menuitem"
+                        tabindex="-1"
+                        id="menu-item-0"
+                      >
+                        Gifts
+                      </a>
+                    </Link>
+                    <Link href="/">
+                      <a
+                        href="#"
+                        className="text-gray-700 block px-4 py-2 text-sm"
+                        role="menuitem"
+                        tabindex="-1"
+                        id="menu-item-1"
+                      >
+                        By Collections
+                      </a>
+                    </Link>
+                    <Link href="/">
+                      <a
+                        href="#"
+                        className="text-gray-700 block px-4 py-2 text-sm"
+                        role="menuitem"
+                        tabindex="-1"
+                        id="menu-item-2"
+                      >
+                        By Types
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </li>
             {navbarItems.map((navItem) => (
               <li key={navItem.item} className="list-none text-left">
                 <Link href={`${navItem.path}`}>

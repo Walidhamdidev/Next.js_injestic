@@ -50,11 +50,22 @@ function Modal({ show, onClose, children, title }) {
           </div>
           {/* <!-- Modal footer --> */}
           <div className="px-14 flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">
-            <button
+            {/* <button
               onClick={handleCloseClick}
               type="button"
               className="text-white mb-5 bg-black hover:bg-yellow-600 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
+              Dismiss
+            </button> */}
+
+            <button
+              onClick={handleCloseClick}
+              className="bg-yellow-300 opacity-75 hover:opacity-100 text-yellow-900 hover:text-gray-900 rounded-full px-5 py-2 mb-4 font-semibold"
+            >
+              <i
+                className="fa fa-shopping-cart -ml-2 mr-2"
+                ariaHidden="true"
+              ></i>
               Dismiss
             </button>
           </div>

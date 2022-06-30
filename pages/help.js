@@ -123,49 +123,6 @@ function Help() {
             </div>
           </div>
         </div>
-
-        <div className="main-images mb-8 ">
-          <div className="images grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="image bg-white rounded-lg shadow-lg overflow-hidden">
-              <a href="#">
-                <img
-                  src="https://images.unsplash.com/45/QDSMoAMTYaZoXpcwBjsL__DSC0104-1.jpg"
-                  alt="Contact with Customer support"
-                  title="Contact with Customer support"
-                />
-                <span className="text-center p-2 text-gray-700 text-sm inline-block w-full">
-                  Customer support
-                </span>
-              </a>
-            </div>
-
-            <div className="image bg-white rounded-lg shadow-lg overflow-hidden">
-              <a href="#">
-                <img
-                  src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a"
-                  alt="Send massage to support disk"
-                  title="Send massage to support disk"
-                />
-                <span className="text-center p-2 text-gray-700 text-sm inline-block w-full">
-                  Send massage
-                </span>
-              </a>
-            </div>
-
-            <div className="image bg-white rounded-lg shadow-lg overflow-hidden">
-              <a href="#">
-                <img
-                  src="https://images.unsplash.com/photo-1488998427799-e3362cec87c3"
-                  alt="Write your feedback"
-                  title="Write your feedback"
-                />
-                <span className="text-center p-2 text-gray-700 text-sm inline-block w-full">
-                  Write feedback
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
     </>
   );

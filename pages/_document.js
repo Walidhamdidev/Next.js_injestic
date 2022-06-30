@@ -23,15 +23,16 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head />
-        <body className="overflow-x-hidden">
+        <body className="overflow-x-hidden bg-gray-100">
           <Main />
           <NextScript />
           <div id="modal-root"></div>
 
-          {/* <script
+          <script
+            crossorigin
             type="text/javascript"
             src="//www.17track.net/externalcall.js"
-          /> */}
+          ></script>
         </body>
       </Html>
     );
