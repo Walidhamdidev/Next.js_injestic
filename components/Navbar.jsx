@@ -95,7 +95,7 @@ function Navbar() {
                 <a
                   className={
                     router.pathname === `/`
-                      ? " border-blue-500 text-gray-800 text-lg border-b-2 mx-1.5 sm:mx-6 transition ease-in duration-300"
+                      ? " border-blue-500 text-gray-500 hover:text-gray-700 text-lg border-b-2 mx-1.5 sm:mx-6 transition ease-in duration-300"
                       : " text-gray-800 text-lg  mx-1.5 sm:mx-6"
                   }
                 >
@@ -112,7 +112,7 @@ function Navbar() {
                       // onMouseLeave={() => setShowDropdownShopItems(false)}
                       className={
                         router.pathname === `/shop`
-                          ? " border-blue-500 text-gray-800 text-lg border-b-2 mx-1.5 sm:mx-6 transition ease-in duration-300"
+                          ? " border-blue-500 text-gray-500 hover:text-gray-700 text-lg border-b-2 mx-1.5 sm:mx-6 transition ease-in duration-300"
                           : " text-gray-800 text-lg  mx-1.5 sm:mx-6"
                       }
                     >
@@ -179,7 +179,7 @@ function Navbar() {
                   <a
                     className={
                       router.pathname === `${navItem.path}`
-                        ? "border-blue-500 text-gray-800 text-lg border-b-2 mx-1.5 sm:mx-6 transition ease-in duration-300"
+                        ? "border-blue-500 text-gray-500 hover:text-gray-700 text-lg border-b-2 mx-1.5 sm:mx-6 transition ease-in duration-300"
                         : "text-gray-800 text-lg  mx-1.5 sm:mx-6"
                     }
                   >
@@ -199,20 +199,18 @@ function Navbar() {
             <Link href="/" passHref>
               <a
                 onClick={() => setCartOpen(!cartOpen)}
-                className="relative text-gray-700 hover:text-gray-600"
+                className="relative text-gray-500 hover:text-gray-700"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  height="24px"
-                  viewBox="0 0 24 24"
-                  width="24px"
-                  fill="#000000"
+                  className="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
                 >
-                  <path d="M0 0h24v24H0V0z" fill="none" />
-                  <path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                  <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
                 </svg>
 
-                <span className="absolute -bottom-2 left-4 rounded-full w-full h-full flex justify-center items-center bg-indigo-500 text-white">
+                <span className="absolute -top-2 left-6  flex justify-center items-center  text-red-500">
                   {cartQuantity}
                 </span>
                 {/* mini cart */}
