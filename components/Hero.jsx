@@ -3,8 +3,8 @@ import Image from "next/image";
 function Hero() {
   return (
     <div>
-      <div className="  bg-gray-50 flex items-center py-5  overflow-hidden relative">
-        <div className="w-full max-w-6xl rounded bg-white shadow p-10  mx-10 text-gray-800 relative md:text-left">
+      <div className="  bg-gray-50 flex items-center justify-center pt-5 md:mx-10 overflow-hidden relative">
+        <div className="w-full rounded bg-white shadow p-10   text-gray-800 relative md:text-left">
           <div className="md:flex items-center ">
             <div className="w-full md:w-1/2 px-10 mb-10 md:mb-0">
               <div className="relative ">

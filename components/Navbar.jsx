@@ -48,7 +48,7 @@ function Navbar() {
   }, [showNav]);
 
   return (
-    <nav className="bg-white  h-20 ">
+    <nav className="bg-white   py-3">
       <div className="container mx-auto md:px-6 px-3   flex justify-around md:items-center">
         <Link href="/">
           <a className="block  text-xl font-bold md:text-2xl  " href="#">
