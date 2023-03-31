@@ -53,8 +53,8 @@ function Navbar() {
         <Link href="/">
           <a className="block  text-xl font-bold md:text-2xl  " href="#">
             <Image
-              src="/images/injestic_logo.png"
-              alt="Logo injestic of Navbar"
+              src="/images/injestic.svg"
+              alt="injestic shop logo"
               width={180}
               height={80}
             />
@@ -104,7 +104,7 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <div class="relative inline-block ">
+              <div className="relative inline-block ">
                 <div>
                   <Link href={`/shop`}>
                     <a
@@ -131,9 +131,9 @@ function Navbar() {
                   ring-black ring-opacity-5 
                   focus:outline-none`}
                   role="menu"
-                  ariaOrientation="vertical"
-                  ariaLabelledby="menu-button"
-                  tabindex="-1"
+                  aria-orientation="vertical"
+                  aria-labelledby="menu-button"
+                  tabIndex="-1"
                 >
                   <div className="py-1" role="none">
                     <Link href="/">
@@ -141,7 +141,7 @@ function Navbar() {
                         href="#"
                         className="text-gray-700 block px-4 py-2 text-sm"
                         role="menuitem"
-                        tabindex="-1"
+                        tabIndex="-1"
                         id="menu-item-0"
                       >
                         Gifts
@@ -152,7 +152,7 @@ function Navbar() {
                         href="#"
                         className="text-gray-700 block px-4 py-2 text-sm"
                         role="menuitem"
-                        tabindex="-1"
+                        tabIndex="-1"
                         id="menu-item-1"
                       >
                         By Collections
@@ -163,7 +163,7 @@ function Navbar() {
                         href="#"
                         className="text-gray-700 block px-4 py-2 text-sm"
                         role="menuitem"
-                        tabindex="-1"
+                        tabIndex="-1"
                         id="menu-item-2"
                       >
                         By Types

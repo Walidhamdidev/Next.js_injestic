@@ -3,7 +3,7 @@ import HeadInfo from "../components/Head";
 function Help() {
   return (
     <>
-      <HeadInfo title="Help | Injestic" />
+      <HeadInfo title="Help | InJestic" />
 
       <div className="container mx-auto px-4 sm:px-8 max-w-3xl">
         <div className="main-title my-8">

@@ -11,6 +11,7 @@ function Hero() {
                 <div className="w-full h-full relative z-10">
                   <Image
                     src="/images/hero.png"
+                    priority
                     width={500}
                     height={500}
                     alt="hero image of product"

@@ -30,8 +30,8 @@ export default function Footer() {
               href="#"
             >
               <Image
-                src="/images/injestic_logo.png"
-                alt="Logo injestic of footer"
+                src="/images/injestic.svg"
+                alt="injestic logo of footer"
                 width={180}
                 height={90}
               />

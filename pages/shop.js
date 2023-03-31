@@ -5,7 +5,7 @@ import { getProductsInCollection } from "../lib/shopify";
 export default function Shop({ products }) {
   return (
     <>
-      <HeadInfo title="Shop | Injestic" />
+      <HeadInfo title="Shop Categories | InJestic" />
       <ProductList products={products} />
     </>
   );
