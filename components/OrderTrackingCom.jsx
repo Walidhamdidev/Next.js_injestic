@@ -3,12 +3,11 @@ import { getProduct } from "../lib/shopify";
 
 export function OrderTrackingCom() {
   const [orderId, setOrderId] = useState("");
-  const [email, setEmail] = useState("");
   const [orderDetails, setOrderDetails] = useState(null);
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleTrackClick = async () => {
-    if (!orderId || !email) {
+    if (!orderId) {
       setErrorMessage("Please enter your order ID.");
       return;
     }
@@ -31,8 +30,8 @@ export function OrderTrackingCom() {
         Please enter you tracking number below.
       </h2>
       <span className="font-normal">
-        If your tracking number doesn't work feel free to contact us at
-        support@injestic.com.
+        If your tracking number doesn't work feel free to contact us at&#160;
+        {process.env.NEXT_PUBLIC_SHOPIFY_STORE_EMAIL}
       </span>
 
       <input
